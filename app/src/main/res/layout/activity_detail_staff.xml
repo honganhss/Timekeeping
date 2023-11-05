@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".activities.DetailStaffActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img_avtStaff"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/titleMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/img_avatar_default" />
+
+
+    <RelativeLayout
+        android:id="@+id/inf_Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avtStaff"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/lable_Gender"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender" />
+
+        <TextView
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/result_Gender"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="@string/female" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/inf_idStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inf_Gender"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/lable_ID"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idStaff" />
+
+        <TextView
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/result_ID"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inf_nameStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inf_idStaff"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/lable_Name"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameStaff" />
+
+        <TextView
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/result_Name"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/inf_birthdayStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inf_nameStaff"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        >
+
+        <TextView
+            android:id="@+id/lable_Birthday"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth" />
+
+        <TextView
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/result_DateOfBirth"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inf_BasicSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inf_birthdayStaff"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        >
+
+        <TextView
+            android:id="@+id/lable_Salary"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_salary" />
+
+        <TextView
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/result_BasicSalary"
+            style="@style/StringStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:text="" />
+    </RelativeLayout>
+</RelativeLayout>

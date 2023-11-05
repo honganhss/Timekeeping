@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/back"
+          android:icon="@drawable/ic_homepage"
+          app:showAsAction="always"
+
+          android:title="TODO">
+    </item>
+    <item android:id="@+id/item1"
+          android:icon="@drawable/ic_menu"
+          android:title="hjd"
+          app:showAsAction="always">
+        <menu>
+            <item android:title="Xóa"
+                  app:showAsAction="never"
+                  android:id="@+id/Xoa"/>
+            <item android:title="Sửa"
+                  app:showAsAction="never"
+                  android:id="@+id/Sua"/>
+            <item android:title="Chi tiết chấm công"
+                  app:showAsAction="never"
+                  android:id="@+id/CTCC"/>
+        </menu>
+    </item>
+
+
+</menu>
